@@ -1,17 +1,82 @@
-#random-website-button
-body {
+
+        .card-img-top {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
+  
+
+
+
+        
+/* Glowing bottom buttons */
+      * {
         margin: 0;
         padding: 0;
-        width: 100%;
-        height: 100vh;
+      }
+      #tiktok,
+      #twitter,
+      #github {
+        font-size: 4em;
+        background-color: #292e26;
+        color: #fff;
+        box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+          2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+          inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+          inset 2px 2px 10px #00000080;
+        border-radius: 29px;
+        padding: 8px 14px;
+        margin: 0 20px;
+        animation: animate 3s linear infinite;
+        text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+          0 0 200px #0072ff;
+      }
+    
+      #tiktok{
+        animation-delay: 0.3s;
+      }
+      #twitter {
+        animation-delay: 0.3s;
+      }
+      #github {
+        animation-delay: 0.1s;
+      }
+      
+      @keyframes animate {
+        from {
+          filter: hue-rotate(0deg);
+        }
+        to {
+          filter: hue-rotate(360deg);
+        }  
+      }
+      
+      body {
+        background-color: #ffff00;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff8000'/%3E%3Cstop offset='1' stop-color='%23ff8000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300ff19'/%3E%3Cstop offset='1' stop-color='%2300ff19' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239900ff'/%3E%3Cstop offset='1' stop-color='%239900ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffff00'/%3E%3Cstop offset='1' stop-color='%23ffff00' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FF0000'/%3E%3Cstop offset='1' stop-color='%23FF0000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230CF'/%3E%3Cstop offset='1' stop-color='%230CF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        animation: colorAnimation 10s infinite;
+      }
+      
+      @keyframes colorAnimation {
+        0% { background-color: #ffff00; }
+        20% { background-color: #ff8000; }
+        40% { background-color: #00ff19; }
+        60% { background-color: #9900ff; }
+        80% { background-color: #FF0000; }
+        100% { background-color: #ffff00; }
+      }
+
+
+
+      .container {
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
-        background: #000;
-    }
-
-    .glow-on-hover {
+      }
+      
+      .glow-on-hover {
         width: 220px;
         height: 50px;
         border: none;
@@ -22,7 +87,7 @@ body {
         position: relative;
         z-index: 0;
         border-radius: 10px;
-    }
+      }
 
     .glow-on-hover:before {
         content: '';
@@ -78,3 +143,17 @@ body {
             background-position: 0 0;
         }
     }
+
+      footer {
+        background-color: black;
+      }
+
+      .magical-text {
+        font-size: 1.2em; /* Increase the font size to make it slightly bigger */
+        font-weight: bold; /* Apply bold font weight */
+      }
+       
+
+      .bmc-button-container {
+        width: 2000px; /* Adjust the width to your desired length */
+      }
