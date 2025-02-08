@@ -1,3 +1,5 @@
 # Stumbledon
-This project features a clickable button which displays a random website from a curated list of interesting and fun sites.
-The Project can be found by visiting this link https://andrewcoder43.github.io/Stumbledon/ 
+The Project can be found by visiting this link https://andrewcoder43.github.io/Stumbledon/   
+
+**How it works**
+Click the **Stumbleon!** button to generate a fun random website that has been preselected from a curated list of websites.
